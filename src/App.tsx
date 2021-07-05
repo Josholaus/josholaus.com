@@ -37,10 +37,13 @@ export default function App() {
 								anim: {
 									speed: 5,
 									size_min: 0.4,
+									sync: true,
 								},
 							},
 							line_linked: {
-								enable: false,
+								enable: true,
+								distance: 60,
+								opacity: 0.5,
 							},
 							move: {
 								random: true,
