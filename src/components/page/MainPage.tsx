@@ -13,7 +13,7 @@ export default function MainPage() {
 				<title>Josholaus | Home</title>
 			</Helmet>
 			<img
-				className="w-44 h-44 rounded-xl mx-auto"
+				className="w-44 h-44 rounded-xl mx-auto shadow-xl"
 				src="/images/image.png"
 				alt="Josholaus in action"
 			/>
