@@ -1,10 +1,11 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { HelmetProvider } from 'react-helmet-async'
+import Particles from 'react-particles-js'
+import { BrowserRouter as Router, Link, Route, Switch, useLocation } from 'react-router-dom'
 import Footer from './components/layout/Footer'
 import MainPage from './components/page/MainPage'
 import NotFoundPage from './components/page/NotFoundPage'
-import Particles from 'react-particles-js'
-import { HelmetProvider } from 'react-helmet-async'
+import ProjectsPage from './components/page/ProjectsPage'
 
 export default function App() {
 	return (
@@ -14,8 +15,10 @@ export default function App() {
 					id="page-container"
 					className="h-max md:h-auto w-screen md:w-auto rounded-none md:rounded-xl absolute z-10 mx-auto p-10 bg-gray-100 text-center">
 					<Router>
+						<BackButton />
 						<Switch>
 							<Route path="/" exact component={MainPage} />
+							<Route path="/projects" exact component={ProjectsPage} />
 							<Route path="**" component={NotFoundPage} />
 						</Switch>
 					</Router>
@@ -57,4 +60,13 @@ export default function App() {
 			</div>
 		</HelmetProvider>
 	)
+}
+
+function BackButton() {
+	const location = useLocation();
+	return (location.pathname !== '/' ?
+		<Link to="/"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+			<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+		</svg></Link>
+		: null)
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
+import { Link } from 'react-router-dom';
 import TitleHeading from '../headings/TitleHeading'
 import TitleSubheading from '../headings/TitleSubheading'
 import PortfolioButton from '../buttons/PortfolioButton'
@@ -21,6 +22,9 @@ export default function MainPage() {
 			<TitleSubheading className="w-80 inline md:inline-block">
 				two idiots who act like they know how to develop software
 			</TitleSubheading>
+			<Link to="/projects">
+				<p className="text-md mt-3 hover:-translate-y-1 transform duration-150">&#8594; check out our projects</p>
+			</Link>
 			<LinkList className="mt-5 grid md:grid-rows-2 lg:grid-flow-col md:auto-cols-max gap-2 justify-center" />
 		</div>
 	)
