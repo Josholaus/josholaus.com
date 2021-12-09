@@ -1,21 +1,21 @@
 html,
 body {
-	overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 @keyframes flyIn {
-	0% {
-		transform: translateY(-100px);
-		opacity: 0;
-	}
-	100% {
-		transform: translateY(0px);
-		opacity: 1;
-	}
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 #page-container {
-	animation-name: flyIn;
-	animation-duration: 1s;
-	animation-timing-function: ease;
+    animation-name: flyIn;
+    animation-duration: 1s;
+    animation-timing-function: ease;
 }
