@@ -20,7 +20,7 @@ export default function MainPage() {
 			/>
 			<TitleHeading className="mt-5">Josholaus</TitleHeading>
 			<TitleSubheading className="w-80 inline md:inline-block">
-				two idiots who act like they know how to develop software
+				just two computer science students who pretend they know how to write good code as a team
 			</TitleSubheading>
 			<Link to="/projects">
 				<p className="text-md mt-3 hover:-translate-y-1 transform duration-150">&#8594; check out our projects</p>
