@@ -19,7 +19,7 @@ export default function App() {
                         <Routes>
                             <Route path="/" element={<MainPage />} />
                             <Route path="/projects" element={<ProjectsPage />} />
-                            <Route path="*/*" element={<NotFoundPage />} />
+                            <Route path="*" element={<NotFoundPage />} />
                         </Routes>
                     </Router>
                     <Footer />
