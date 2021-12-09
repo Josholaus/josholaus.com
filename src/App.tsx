@@ -9,7 +9,7 @@ import ProjectsPage from './components/page/ProjectsPage'
 export default function App() {
     return (
         <HelmetProvider>
-            <div className="flex items-center justify-center h-screen w-screen bg-gray-100 md:bg-black">
+            <div className="flex items-center justify-center h-screen w-screen animated-gradient">
                 <div
                     id="page-container"
                     className="h-max md:h-auto w-screen md:w-auto rounded-none md:rounded-xl absolute z-10 mx-auto p-10 bg-gray-100 text-center"
