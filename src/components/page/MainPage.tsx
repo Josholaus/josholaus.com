@@ -34,7 +34,7 @@ function LinkList(props: any) {
             <SpotifyButton link="https://open.spotify.com/playlist/6uHkfhApJRMJHDs9SXFhSu?si=b54f1a87ee774b07">
                 Spotify playlist
             </SpotifyButton>
-            <PortfolioButton link="https://nicolaus.lol/">Nico's Website</PortfolioButton>
+            <PortfolioButton link="https://nicolausrossi.dev/">Nico's Website</PortfolioButton>
             <GitHubButton link="https://github.com/josholaus">GitHub</GitHubButton>
             <PortfolioButton link="https://bemoty.dev/">Josh's Website</PortfolioButton>
         </div>
